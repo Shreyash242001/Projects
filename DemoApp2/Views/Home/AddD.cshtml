@@ -1,0 +1,140 @@
+@* @model DemoApp.Models.Department
+<html>
+    <head>
+        <title>DemoApp</title>
+    </head>
+    <style>
+        table
+             {
+                width: 100%;
+                color: rgb(197, 8, 197);
+            }
+    </style>
+    <body>
+        <h1>Welcome </h1>
+        <form method="post">
+            <b>Id:</b>
+            @Html.TextBoxFor(entry => entry.deptno)<br><br>
+             <b>Name:</b>
+            @Html.TextBoxFor(entry => entry.dname)<br><br>
+             <b>Location:</b>
+            @Html.TextBoxFor(entry => entry.loc)<br><br>
+            <input type="submit" value="Register"/>
+        </form>
+       <p>
+            <button id="navigateButton"> <a href="/Home/Options">Back</a></button> 
+        </p>
+
+        
+
+    </body>
+</html> *@
+
+
+
+@model DemoApp.Models.Department
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DemoApp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #25384d;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .container {
+            background-color: #25384d;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            max-width: 400px;
+            margin: 50px auto;
+        }
+
+        form b {
+            color: #fff;
+            display: block;
+            margin-top: 10px;
+        }
+
+        form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #fff;
+            border-radius: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #25384d;
+            color: #f0f0f0;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #072761;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #25384d;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: rgb(20, 93, 230);
+        }
+
+        /* Center the buttons */
+        .center-buttons {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to DemoApp</h1>
+    <div class="container">
+        <form method="post">
+            <b>Id:</b>
+            @Html.TextBoxFor(entry => entry.deptno)
+            <b>Name:</b>
+            @Html.TextBoxFor(entry => entry.dname)
+            <b>Location:</b>
+            @Html.TextBoxFor(entry => entry.loc)
+        </form>
+    </div>
+    <div class="center-buttons">
+        <input type="submit" value="Register" />
+    </div>
+    <p>
+        <button id="navigateButton"> <a href="/Home/Options">Back</a></button>
+    </p>
+</body>
+</html>

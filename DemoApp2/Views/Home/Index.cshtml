@@ -1,0 +1,96 @@
+@model DemoApp.Models.Admin;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<html>
+    <head>
+        <title>DemoApp</title>
+        <style>
+
+                @* background-image: url(https://www.bing.com/th/id/OGC.e9e07cd1308b531c59510f3dad4263aa?pid=1.7&rurl=https%3a%2f%2fgiffiles.alphacoders.com%2f350%2f35050.gif&ehk=PxOtttLdWFJD4IuAL6%2fETGAO7MYVPEkBccGXNlxgwMM%3d); /* Replace 'background.jpg' with your image file */
+              
+                <video id="video-bg" autoplay loop muted>
+           background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                font-family: Arial, sans-serif;
+                color: #333;
+                text-align: center;
+            } *@
+            body {
+        background-image: url(https://www.bing.com/th/id/OGC.e9e07cd1308b531c59510f3dad4263aa?pid=1.7&rurl=https%3a%2f%2fgiffiles.alphacoders.com%2f350%2f35050.gif&ehk=PxOtttLdWFJD4IuAL6%2fETGAO7MYVPEkBccGXNlxgwMM%3d);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        font-family: Arial, sans-serif;
+        color: #333;
+        @* text-align: center; *@
+        margin: 0; /* Remove default margin */
+        overflow: hidden; /* Hide overflowing content */
+        height: 100vh; /* Set the height to 100% of the viewport */
+    }
+
+
+
+            h1 {
+                color: #fff; /* Text color for the h1 element */
+            }
+
+            form {
+                background: rgba(76, 91, 114, 0.8); /* Semi-transparent white background for the form */
+                padding: 20px;
+                border-radius: 10px;
+                 margin: 25px 50px 75px 100px;
+                max-width: 300px;
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            input[type="submit"] {
+                background-color: #007BFF; /* Button background color */
+                color: #fff; /* Button text color */
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #0056b3; /* Hover color for the button */
+            }
+
+
+      
+}
+        </style>
+    </head>
+    <body>
+      
+            @User.Identity.Name
+        <h1>Welcome Admin</h1>
+        <h3>Please Sign In</h3>
+        <form method="post">
+            <p>
+                <b color = white>Admin ID</b><br />
+                @* <input type="text" asp-for="Models.Username" /> *@
+                @Html.TextBoxFor(entry=>entry.Username);
+            </p>
+            <p>
+                <b>Password</b><br />
+                @* <input type="password" asp-for="Input.Password" /> *@
+                 @Html.PasswordFor(entry=>entry.Password);
+            </p>
+            <p>
+                <input type="submit" value="Log In" />
+            </p>
+        </form>
+        <div asp-validation-summary="All"></div>
+    </body>
+</html>

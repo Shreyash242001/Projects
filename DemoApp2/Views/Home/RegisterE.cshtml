@@ -1,0 +1,139 @@
+@* @model IEnumerable<DemoApp.Models.EmpInfo>
+<html>
+    <head>
+        <title>Employee</title>
+    </head>
+    <h1>Our Employees</h1>      
+    <center>
+    <table border="2">
+        <tr>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Employee Salary</th>
+            <th>Employee Age</th>
+            <th>Employee DId</th>
+        </tr>
+        @foreach(var entry in Model)
+        {
+            <tr>
+                <td>@entry.EId</td>
+                <td>@entry.EName</td>
+                <td>@entry.ESalary</td>
+                <td>@entry.EAge</td>
+                <td>@entry.DeptId</td>
+            </tr>
+        }
+        </table>
+        </center>
+
+        <p>
+            <button id="navigateButton"> <a href="/Home/AddE">Enter new Employee</a></button>
+           
+        </p>
+        <p>
+            <button id="navigateButton"> <a href="/Home/Delete">Delete the Employee</a></button>
+        </p>
+        <p>
+            <button id="navigateButton"> <a href="/Home/Update">Update the Employee</a></button>
+        </p>
+        <p>
+            <button id="navigateButton"> <a href="/Home/Index">Log Out</a></button> 
+        </p>
+    
+</html> *@
+
+@model IEnumerable<DemoApp.Models.EmpInfo>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #25384d;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #000000;
+            padding: 8px;
+            color: #fff;
+            text-align: center;
+        }
+
+        th {
+            background-color: #25384d;
+            color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #f1f1f1;
+        }
+
+        button {
+            background-color: #25384d;
+            color: #9c6969;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #072761;
+        }
+    </style>
+</head>
+<body>
+    <h1>Options</h1>
+    <center>
+        <table border="2">
+            <tr>
+                <th>Employee Id</th>
+                <th>Employee Name</th>
+                <th>Employee Salary</th>
+                <th>Employee Age</th>
+                <th>Employee DId</th>
+            </tr>
+            @foreach(var entry in Model)
+            {
+                <tr>
+                    <td>@entry.EId</td>
+                    <td>@entry.EName</td>
+                    <td>@entry.ESalary</td>
+                    <td>@entry.EAge</td>
+                    <td>@entry.DeptId</td>
+                </tr>
+            }
+        </table>
+    </center>
+       <p>
+        <button><a href="/Home/Display2">Go Back</a></button>
+      </p>
+       <p>
+        <button><a href="/Home/Options">Options</a></button>
+      </p>
+     
+</body>
+</html>

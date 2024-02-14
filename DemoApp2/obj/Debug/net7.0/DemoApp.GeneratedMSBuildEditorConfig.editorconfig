@@ -1,0 +1,65 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DemoApp
+build_property.RootNamespace = DemoApp
+build_property.ProjectDir = /home/cdac/zoro/EmployeeMvc/DemoApp2/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/cdac/zoro/EmployeeMvc/DemoApp2
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/cdac/zoro/EmployeeMvc/DemoApp2/Views/Home/AddD.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BZGRELmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/cdac/zoro/EmployeeMvc/DemoApp2/Views/Home/AddE.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BZGRFLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/cdac/zoro/EmployeeMvc/DemoApp2/Views/Home/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/cdac/zoro/EmployeeMvc/DemoApp2/Views/Home/DeleteD.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EZWxldGVELmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/cdac/zoro/EmployeeMvc/DemoApp2/Views/Home/Department.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EZXBhcnRtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/cdac/zoro/EmployeeMvc/DemoApp2/Views/Home/Display2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EaXNwbGF5Mi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/cdac/zoro/EmployeeMvc/DemoApp2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/cdac/zoro/EmployeeMvc/DemoApp2/Views/Home/Options.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9PcHRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/cdac/zoro/EmployeeMvc/DemoApp2/Views/Home/Options2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9PcHRpb25zMi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/cdac/zoro/EmployeeMvc/DemoApp2/Views/Home/RegisterE.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9SZWdpc3RlckUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/cdac/zoro/EmployeeMvc/DemoApp2/Views/Home/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9VcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/cdac/zoro/EmployeeMvc/DemoApp2/Views/Home/UpdateD.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9VcGRhdGVELmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

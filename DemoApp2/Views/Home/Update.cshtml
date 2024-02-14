@@ -1,0 +1,23 @@
+@model DemoApp.Models.Employee
+<html>
+    <head>
+        <title>DemoApP</title>
+    </head>
+    <body>
+        <h1>Welcome</h1>
+        <form method="post">
+            <b>Id:</b><br>
+            @Html.TextBoxFor(entry => entry.Id)<br><br>
+             <b>Update salary:</b><br>
+            @Html.TextBoxFor(entry => entry.sal)<br><br>
+            <input type="submit" value="Update"/>
+            
+        </form>
+        @* <p>
+            <i>@Html.ValidationMessageFor(entry => entry.Id)</i>
+        </p> *@
+        <p>
+            <button id="navigateButton"> <a href="/Home/Options">Back</a></button> 
+        </p>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+@* @model DemoApp.Models.Admin
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<html>
+    <head>
+        <title>Hello Admin</title>
+    </head>
+    <body>
+        <h1>
+            <button id="navigateButton"> <a href="/Home/RegisterE">Employee Details</a></button></h1>
+
+        <h1>
+             <button id="navigateButton"> <a href="/Home/Department">Departement Details</a></button></h1>
+        <p>
+            <a asp-controller="Home" asp-action="LogOut">Logout</a>
+        </p>
+    </body>
+</html> *@
+
+@model DemoApp.Models.Admin
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<html>
+<head>
+    <title>Hello Admin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #385569;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        button {
+            background-color: #031d0e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d6d35;
+        }
+
+        a {
+            text-decoration: none;
+            color: #b0b5b8;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, Admin!</h1>
+
+    <div style="text-align: center;">
+        <button><a href="/Home/RegisterE">Employee Details</a></button>
+        <button><a href="/Home/Department">Department Details</a></button>
+        @* <button><a href="/Home/Options">Options</a></button> *@
+    </div>
+
+    <p>
+      <button><a asp-controller="Home" asp-action="LogOut">Logout</a></button>
+    </p>
+</body>
+</html>

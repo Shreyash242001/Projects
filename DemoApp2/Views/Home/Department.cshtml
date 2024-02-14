@@ -1,0 +1,117 @@
+@* @model IEnumerable<DemoApp.Models.DeptInfo>
+<html>
+    <head>
+        <title>Departement</title>
+    </head>
+    <h1>Our Departement</h1>
+
+            
+    <center>
+    <table border="2">
+        <tr>
+            <th>Department Number</th>
+            <th>Departement Name</th>
+            <th>Departement Location</th>
+        </tr>
+        @foreach(var entry in Model)
+        {
+            <tr>
+                <td>@entry.Deptno</td>
+                <td>@entry.DName</td>
+                <td>@entry.DLocation</td>
+            </tr>
+        }
+        </table>
+        </center>
+        <p>
+            <button id="navigateButton"> <a href="/Home/Options">Back</a></button> 
+        </p>
+</html> *@
+
+@model IEnumerable<DemoApp.Models.DeptInfo>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Department</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000000;
+        }
+
+        h1 {
+            color: #fdfafa;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px 0 rgba(247, 244, 244, 0.2);
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ecdfdf;
+        }
+        tr:nth-child(even) {
+            background-color: #ecdfdf;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        button a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Department</h1>
+    <table border="1">
+        <tr>
+            <th>Department Number</th>
+            <th>Department Name</th>
+            <th>Department Location</th>
+        </tr>
+        @foreach(var entry in Model)
+        {
+            <tr>
+                <td>@entry.Deptno</td>
+                <td>@entry.DName</td>
+                <td>@entry.DLocation</td>
+            </tr>
+        }
+    </table>
+    <p>
+        <button id="navigateButton"><a href="/Home/Display2">Back</a></button>
+    </p>
+    <p>
+        <button id="navigateButton"><a href="/Home/Options2">Options</a></button>
+    </p>
+</body>
+</html>

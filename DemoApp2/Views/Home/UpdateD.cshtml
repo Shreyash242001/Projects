@@ -1,0 +1,95 @@
+@model DemoApp.Models.Department
+<html>
+<head>
+    <title>DemoApp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        h1 {
+            background-color: #25384d;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        form {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        b {
+            color: #fff;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #000000;
+            text-align: center;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #25384d;
+            color: #9c6969;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #072761;
+        }
+
+        a {
+            text-decoration: none;
+            color: #f1f1f1;
+        }
+
+        button {
+            background-color: #25384d;
+            color: #9c6969;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #072761;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <form method="post">
+        <b>Department Number:</b><br>
+        @Html.TextBoxFor(entry => entry.deptno)<br><br>
+        <b>Update Location:</b><br>
+        @Html.TextBoxFor(entry => entry.loc)<br><br>
+        <input type="submit" value="Update"/>
+    </form>
+    <p>
+        <button id="navigateButton"><a href="/Home/Options">Back</a></button> 
+    </p>
+</body>
+</html>
